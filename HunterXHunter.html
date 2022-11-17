@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link id='csslink' rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+        <script>
+            function toggleCSS() {
+                var currentCSS = document.getElementById('csslink');
+                if (currentCSS.getAttribute('href') == 'alternate.css') {
+                    currentCSS.setAttribute('href', 'main.css');
+                } else {
+                    currentCSS.setAttribute('href', 'alternate.css');
+                }
+            }
+        </script>
+        <title>Hunter X Hunter</title>
+    </head>
+
+    <body class="body">
+        <div class="navbar"> 
+            <div class="container flex">
+                <h1 class="Title">Anime Website</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Hunter X Hunter</a></li>
+                        <li><a href="./attack_on_titan.html">Attack on Titan</a></li>
+                        <li><a href="./Dragonball.html">Dragon Ball Z</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="description">
+            <div class="container grid flex">
+                <div class="desctiption-text">
+                    <h2>Hunter X Hunter Synopsis</h2>
+                    <p>Gon Freecss is a young boy living on Whale Island.who one day discovers that the father whom he thought was dead, is in fact alive and well. He learns that his father, Ging, is a legendary "Hunter", an individual who has proven themselves an elite member of humanity. Despite the fact that Ging left his son with his relatives in order to pursue his own dreams, Gon becomes determined to follow in his father's footsteps and become a hunter.To become a Hunter, he must pass the Hunter Examination, where he meets and befriends three other applicants: Kurapika, Leorio and Killua. Can Gon pass this formidable hurdle, the Hunter Examination, to become "the Best Hunter in the World" and eventually meet his father?</p>
+                </div>
+                <img src="./images/HXH2.jpg" alt="Anime Image">
+            </div>      
+        </section>
+        
+        <section class="characters">
+            <h2>Main Characters</h2>
+            <div class="container flex">
+                <div class="card">
+                    <h3>Gon Freecs</h3>
+                    <img src="./images/gon2.jpg" alt="">
+                    <h4>Description</h4>
+                    <p>Gon is an athletic, rustic, and friendly boy who is searching for adventure. Also, he is not very good at math. However, having spent a lot of time in the woods as a child, he is very good with animals. Gon's determination and talent lead to both potential allies and potential enemies trusting in him and taking his side. He has inhuman senses; Gon has a heightened sense of smell almost like a dog's, he also has very good vision, as well as having a very keen taste.</p>
+                </div>
+                <div class="card">
+                    <h3>Killua Zoldyck</h3>
+                    <img src="./images/killua2.jpeg" alt="">
+                    <h4>Description</h4>
+                    <p>Initially, Killua is introduced as a character who seems similar to Gon; cheeky, cheerful, and full of mischievous ideas. However, his ruthlessness and aptitude in killing shows the other side of him — deadly and bloodthirsty. Tortured since birth, Killua has been conditioned to possess extreme tolerance for poison, electricity and pain. He possesses extraordinary agility and strength that makes him a one-man killing machine — definitely not one to be trifled with.</p>
+                </div>
+                <div class="card">
+                    <h3>Leorio Paradinight</h3>
+                    <img src="./images/lerio.jpg" alt="">
+                    <h4>Description</h4>
+                    <p>Leorio is passionate about his ambitions to become a Hunter and help the poor, although he is a self-centered, narcissistic man in doing so, wanting to earn money once he becomes a licensed hunter or "abusing" his powers to save his friend should he gets elected as a Chairman. Comically, he serves as a "big brother" of the group, being the overprotective, hot-headed, and cynical individual and would do anything to protect his friends.</p>
+                </div>
+                <div class="card">
+                    <h3>Kurapika</h3>
+                    <img src="./images/kurapika.jpg" alt="">
+                    <h4>Description</h4>
+                    <p>Kurapika is an intelligent individual, possessing vast knowledge. He is reticent; not one to open up to people easily and quite judgmental. His distance from others initially keeps him level-headed and moralistic, but his heart has been poisoned with sadness and hatred. Having been traumatized from losing everyone he loved at the age of twelve, Kurapika closes his heart to new people and remains introverted as to stay focused on his goal.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container grid-3">
+                <div class="footer-name">
+                    <h1>Anime Website</h1>
+                    <p>Copyright &copy; 2022</p>
+                    <a onclick="toggleCSS()" href="#" class="change-btn">Change CSS</a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Hunter X Hunter</a></li>
+                        <li><a href="./attack_on_titan.html">Attack on Titan</a></li>
+                        <li><a href="./Dragonball.html">Dragon Ball Z</a></li>
+                    </ul>
+                </nav>
+                <div class="creators">
+                    <h1>Creators:</h1>
+                    <ul>
+                        <li>Zion Mitchell</li>
+                        <li>Cecil Sweeny</li>
+                        <li>Devin Ramotar</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

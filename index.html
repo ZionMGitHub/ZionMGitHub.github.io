@@ -2,37 +2,93 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link id='csslink' rel="stylesheet" href="./main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" />
-        <title>Class Project</title>
+        <script>
+            function toggleCSS() {
+                var currentCSS = document.getElementById('csslink');
+                if (currentCSS.getAttribute('href') == 'alternate.css') {
+                    currentCSS.setAttribute('href', 'main.css');
+                } else {
+                    currentCSS.setAttribute('href', 'alternate.css');
+                }
+            }
+        </script>
+        <title>Welcome page</title>
     </head>
 
-    <body>
-        <section class="login-page">
-            <div class="login-form">
-                <h1>Log In</h1>
-                <p>Please log in to access the platform</p>
-                <form>
-                    <div class="form-input">
-                        <input type="email" name="email" placeholder="Enter Email" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="text" name="username" placeholder="Enter Username" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="checkbox" name="remember-me">Remember Me
-                        <a href="#">Need Help?</a>
-                    </div>
-                    <div class="form-input">
-                        <button><a href="#">Log In</a></button>
-                    </div>
-                    <div class="form-input">
-                        Don't have an account? <a href="#">Create an account here.</a>
-                    </div>
-                </form>
+    <body class="body">
+            <div class="navbar"> 
+            <div class="container flex">
+                <h1 class="Title">Anime Website</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./HunterXHunter.html">Hunter X Hunter</a></li>
+                        <li><a href="./attack_on_titan.html">Attack on Titan</a></li>
+                        <li><a href="./Dragonball.html">Dragon Ball Z</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <header>
+            <h2>Pick your favorite anime</h2>
+        </header>
+        
+        <section class="main">
+            <div class="container flex">
+                <div class="card">
+                    <h3>Hunter X Hunter</h3>
+                    <img src="./images/HunterXHunter.jpg" alt="">
+                    <h4>Description</h4>
+                    <p>Hunters are licensed, elite members of humanity who are capable of tracking down secret treasures, rare beasts, or even other individuals. They can also access locations that regulars cannot access. To obtain a Hunter License one must pass the rigorous annual Hunter Exam run by the Hunter Association, which has a success rate of less than one in a hundred-thousand.</p>
+                        <button class="btn"><a href="./HunterXHunter.html">Click to learn more</a></button>
+                </div>
+                <div class="card">
+                    <h3>Attack On Titan</h3>
+                    <img src="./images/AOT.jpg" alt="">
+                    <h4>Description</h4>
+                    <p>Attack on Titan was serialized in Kodansha's monthly shōnen manga magazine. It is set in a world where humanity is forced to live in cities surrounded by three enormous walls that protect them from gigantic man-eating humanoids referred to as Titans; The story follows Eren Yeager, who vows to exterminate the Titans after they bring about the destruction of his hometown and the death of his mother.</p>
+                        <button class="btn"><a href="./attack_on_titan.html">Click to learn more</a></button>
+                </div>
+                <div class="card">
+                    <h3>Dragon Ball Z</h3>
+                    <img src="./images/dragon-ball-z-shenron-1.jpeg" alt="">
+                    <h4>Description</h4>
+                    <p>Dragon Ball Z is a popular spinoff of the also popular original series Dragon Ball. Dragon Ball Z originally aired in Japan in the late 1980s and ran through the mid-'90s with the English version airing in the US during the 2000s and 2010's. The show continues to follow its main character Goku and his band of friends called the Z fighters as they defend earth from certian destruction.</p>
+                    <button class="btn"><a href="./Dragonball.html">Click to learn more</a></button>
+                </div>
+
             </div>
         </section>
+        <footer class="footer">
+            <div class="container grid-3">
+                <div class="footer-name">
+                    <h1>Anime Website</h1>
+                    <p>Copyright &copy; 2022</p>
+                    <a onclick="toggleCSS()" href="#" class="change-btn">Change CSS</a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./HunterXHunter.html">Hunter X Hunter</a></li>
+                        <li><a href="./attack_on_titan.html">Attack on Titan</a></li>
+                        <li><a href="./Dragonball.html">Dragon Ball Z</a></li>
+                    </ul>
+                </nav>
+                <div class="creators">
+                    <h1>Creators:</h1>
+                    <ul>
+                        <li>Zion Mitchell</li>
+                        <li>Cecil Sweeny</li>
+                        <li>Devin Ramotar</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>

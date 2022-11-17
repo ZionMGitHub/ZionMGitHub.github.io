@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dragon Ball Z</title>
+
+<link id='csslink' href="main.css" rel="stylesheet"> 
+<script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'main.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css');
+        }
+    }
+</script>
+
+</head>
+
+<Body class="DBZ-body">
+    <div class="navbar"> 
+        <div class="container flex">
+            <h1 class="Title">Anime Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./HunterXHunter.html">Hunter X Hunter</a></li>
+                    <li><a href="./attack_on_titan.html">Attack on Titan</a></li>
+                    <li><a href="#">Dragon Ball Z</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+     <div  class="drag">
+        <img src="./images/dragon-ball-z-shenron-1.jpeg" class="dragon" alt="Shenron" />
+    </div>
+
+    <h1 id="head1">DRAGON BALL Z</h1>
+    <div class="sum">
+        <div class="button"><button onclick="toggleCSS()">Change CSS</button></div>
+        <p id="content">Dragon Ball Z is a popular spinoff of the also popular original series Dragon Ball. Dragon Ball
+            Z originally aired in Japan in the late 1980s and ran through the mid-'90s with the English version airing 
+            in the US during the 2000s and 2010's. The show continues to follow its main character Goku and his band of 
+            friends as the defend earth from certian destruction. Dragon Ball Z represents a much simpler time in my 
+            life. The action-packed storyline kept me and my peers engaged for hours, as we watched our favorite characters
+            settle their differences the best way they knew how; Kung Fu! Here are few of my favorite/most memerable characters. 
+        </p>
+    </div>
+
+    <div id="paintingBox">
+		<table>
+			<caption> Charater Chart </caption>
+			<thead>
+				<tr>
+					<th> Character Picture</th>
+					<th> Name</th>
+					<th> Background</th>
+					<th> Hands or No-Hands</th>
+				</tr>
+			</thead>
+				<tr>
+					<td> <img src="./images/goku-dragon-ball-z.jpeg"
+                        alt="GoKu Super Saiyan" /> </td>
+					<td> Goku </td>
+					<td> Member of the Saiyan alien race that protect earth and its inhabitats</td>
+					<td> 4.9 Stars hands rating. <br> Like the handiest of hands </td>
+				</tr>
+				
+				<tr>
+					<td> <img src="./images/majin-buu-750x500.jpg"
+                        alt="Majin Buu" /></td>
+					<td>Majin Buu </td>
+					<td> Similar to the likes of an genie. Majin Buu was brought back from the dead souly to help Babidi
+                         conquer the universe.</td>
+					<td> 4.5 Stars hands rating. <br>  </td>
+				</tr>
+				
+				<tr>
+					<td><img src="./images/picollo.jpeg"
+                        alt="Piccolo" /></td>
+					<td>Piccolo </td>
+					<td> Once a enemy of Goku, Piccolo joins forces with Goku to face mutual treats. Their relationship
+                        evoles and Piccolo eventual trains Goku's son Gohan in Gokus absences.  </td>
+					<td> 4.0 Stars hands rating. <br>  </td>
+				</tr>
+
+                <tr>
+					<td> <img src="./images/krillin.jpeg"
+                        alt="Krillin" /></td>
+					<td>Krillin </td>
+					<td> Krillin is one of few human charaters within the series. He's well known for his courage, witty remarks 
+                        and his uncanny ability of always ending up on the bad side of an beatdow. Krillin's revolving door of butt
+                        kickings shouldn't come as an surprise, as the major of his opponents are trained alians warriors dwarfing him
+                        size and stature. Krillin consistantly displays his loyalty and courage in situation were its evident thathe's
+                        matched and for that, gained the respect of many. </td>
+					<td> 2.75 Stars hands rating. <br> 5 for 5 when comes to heart!  </td>
+				</tr>
+		</table>
+
+</Body>
