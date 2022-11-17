@@ -114,7 +114,35 @@
     display: flex;
 }
 
+/* Animations */
+.main .card.HXH{
+animation: slideInFromLeft 1s ease-in;
+}
 
+.main .card.DBZ{
+    animation: slideInFromRight 1s ease-in;
+}
+
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-150%);
+    }
+
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(150%);
+    }
+
+    100%{
+        transform: translateX(0)
+    }
+}
 /* footer */
 .footer-name{
     justify-self: flex-start;
